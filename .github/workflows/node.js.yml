@@ -40,7 +40,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [16.x]
     env:
       RUNNER_LABEL: prod2
     needs: build-and-deploy-dev  

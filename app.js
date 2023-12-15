@@ -21,7 +21,7 @@ app.use(customMiddlewareErrorHandler);
 const start = async () => {
   try {
     await connectDB();
-    app.listen(3000, () => {
+    app.listen(PORT, () => {
       console.log(`Server started listening at port ${PORT}`);
     });
   } catch (err) {
